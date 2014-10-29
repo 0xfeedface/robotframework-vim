@@ -97,9 +97,10 @@ hi def link robotString     String
 hi def link robotNumber     Number
 hi def link robotPath       Constant
 hi def link robotOperator   Operator
-hi def link robotBuiltin    Comment
+hi def link robotBuiltin    Function
 hi def link robotCommonSet  Keyword
 hi def link robotKeywordSet Keyword
+hi def link robotKeywordDef Function
 hi def link robotTestcaseSet    Keyword
 hi def link robotGherkin    Keyword
 hi def link seleniumLibrary Keyword
