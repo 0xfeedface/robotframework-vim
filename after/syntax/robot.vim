@@ -67,6 +67,13 @@ syn match seleniumLibrary   "\c\<\(Add Location Strategy\|Alert Should Be Presen
 " Keyword definitions
 syn region robotKeywordDef      start=/^/ end=/\($\|\s\{2,}\)/me=s-1
 
+" Comment in the first field of a line
+syn region robotComment         start=/^#/ excludenl end=/$/
+" Comment in the first field of a line
+syn region robotComment         start=/^\s#/ excludenl end=/$/
+" Comment startin in some later field
+syn region robotComment         start=/\s\{2,}#/ excludenl end=/$/
+
 "------------------------------------------------------------------------
 " Keywords
 "------------------------------------------------------------------------
