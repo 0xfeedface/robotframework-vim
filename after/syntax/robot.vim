@@ -74,6 +74,9 @@ syn region robotComment         start=/^\s#/ excludenl end=/$/
 " Comment startin in some later field
 syn region robotComment         start=/\s\{2,}#/ excludenl end=/$/
 
+syn region robotString          start=/"/ excludenl end=/"/
+syn region robotString          start=/'/ excludenl end=/'/
+
 "------------------------------------------------------------------------
 " Keywords
 "------------------------------------------------------------------------
