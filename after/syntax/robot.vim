@@ -55,9 +55,6 @@ syn match robotCommonSet    "\c\[\(Documentation\|Timeout\)\]"
 syn match robotKeywordSet   "\c\[\(Arguments\|Return\)\]"
 " Testcase settings
 syn match robotTestcaseSet  "\c\[\(Tags\|Setup\|Teardown\|Precondition\|Postcondition\|Template\)\]"
-" Robot Gherkin support
-syn match robotGherkin      "\c\<\(Given\|When\|Then\|And\|But\)\>"
-
 " Settings (global)
 syn match robotSetup        "\c\(Suite\|Test\) \(Setup\|Teardown\|Precondition\|Postcondition\)"
 syn match robotSettings     "\c\(Library\|Resource\|Variables\|Documentation\|Metadata\|Force Tags\|Default Tags\|Test Template\|Test Timeout\)"
