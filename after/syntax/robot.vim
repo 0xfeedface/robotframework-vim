@@ -64,9 +64,8 @@ syn match seleniumLibrary   "\c\<\(Add Location Strategy\|Alert Should Be Presen
 "------------------------------------------------------------------------
 " Regions
 "------------------------------------------------------------------------
-" Single-line comments. Are there multi-line comments?
-syn region robotComment         display start="^#" excludenl end="$"
-syn region robotString          start="\"" excludenl end="\""
+" Keyword definitions
+syn region robotKeywordDef      start=/^/ end=/\($\|\s\{2,}\)/me=s-1
 
 "------------------------------------------------------------------------
 " Keywords
